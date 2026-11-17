@@ -1,7 +1,7 @@
 // VAIB - Funciones de la app del repartidor
 // Para ejecutarlo: node vaib.jsd
 
-// ===== CONFIGURACIÓN =====
+// ================================================================= CONFIGURACIÓN =================================================================
 const CAPACIDAD = 6
 const MINUTOS_POR_PARADA = 8
 const MARGEN_LISTO = 15
@@ -73,7 +73,7 @@ function minutosAHora(totalMinutos) {
   return textoHoras + ':' + textoMinutos
 }
 
-// ============================================================ 1. PLANIFICAR EL DÍA ============================================================
+// ============================================================ 1. PLANIFICAR EL DÍA =================================================================
 
 // Reparte los pedidos en salidas: una por franja, como máximo 6 pedidos
 function crearSalidas() {
