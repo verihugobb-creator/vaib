@@ -174,7 +174,7 @@ function siguienteParada(paradas) {
 // Botón "Recogido": guarda la hora para poder medir el frío
 function marcarRecogido(parada, hora) {
   parada.estado = 'recogido'
-  parada.horaReal = hora
+  parada.horaReal = hora  // horaReal nueva variable que registraria la hora en ese momento con un "onclick"
 }
 
 // Botón "Entregado": comprueba si llega a tiempo y cuánto frío ha aguantado
