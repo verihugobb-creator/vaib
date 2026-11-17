@@ -48,7 +48,7 @@ const ordenDeEntrega = [
   'C/ Rogent 80'
 ]
 
-// ===== FUNCIONES PARA LAS HORAS =====
+// ============================================================ FUNCIONES PARA LAS HORAS ============================================================
 
 // Convierte "11:20" en 680 (minutos desde las 00:00)
 function horaAMinutos(hora) {
@@ -73,7 +73,7 @@ function minutosAHora(totalMinutos) {
   return textoHoras + ':' + textoMinutos
 }
 
-// ===== 1. PLANIFICAR EL DÍA =====
+// ============================================================ 1. PLANIFICAR EL DÍA ============================================================
 
 // Reparte los pedidos en salidas: una por franja, como máximo 6 pedidos
 function crearSalidas() {
@@ -159,7 +159,7 @@ function calcularHoras(salida) {
   }
 }
 
-// ===== 2. APP DEL REPARTIDOR =====
+// ============================================================ 2. APP DEL REPARTIDOR ============================================================
 
 // Botón "He llegado": devuelve la primera parada que sigue pendiente
 function siguienteParada(paradas) {
@@ -227,7 +227,7 @@ function reportarIncidencia(parada, tipo) {
   }
 }
 
-// ===== 3. PRUEBA =====
+// =============================================================== 3. PRUEBA ==================================================================
 
 // Planificar el día
 const salidas = crearSalidas()
